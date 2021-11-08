@@ -1,13 +1,11 @@
 const express=require('express');
 const bodyParser=require('body-parser');
 const mongoose = require('mongoose');
-// const jwt = require('jsonwebtoken');
-// // const bcrypt =require('bcrypt-nodejs');
-// const config = require('config');
+
 const helmet=require('helmet');
 const cors=require('cors');
 const {check,validationResult}=require('express-validator')
-// const { MongoClient } = require('mongodb');
+
 const UsersSchemas=require('./Schema/users.js');
 const bcrypt=require('bcryptjs');
 const app=express()
